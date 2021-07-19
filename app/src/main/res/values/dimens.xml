@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="joke_list_title_font_size">20sp</dimen>
+    <dimen name="action_button_width">150dp</dimen>
+    <dimen name="action_button_height">50dp</dimen>
+
+    <dimen name="main_title_font_size">20sp</dimen>
+
+    <!-- Joke item -->
+    <dimen name="joke_setup_font_size">18sp</dimen>
+    <dimen name="joke_punchline_font_size">18sp</dimen>
+    <dimen name="joke_type_font_size">15sp</dimen>
+    <dimen name="joke_item_height">50dp</dimen>
+    <dimen name="joke_item_width">120dp</dimen>
+    <dimen name="joke_item_margin">5dp</dimen>
+    <dimen name="joke_item_favorite_icon_size">30dp</dimen>
+
+    <!-- Random Image Fragment -->
+    <dimen name="rand_image_image_size">400dp</dimen>
+
+
+</resources>

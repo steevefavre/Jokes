@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyJokes</string>
+    <string name="joke_list_button_refresh">Get new jokes</string>
+    <string name="joke_list_button_favorites">Clear Favorites</string>
+    <string name="joke_list_title">Have fun!</string>
+
+    <string name="random_image_button_back">Back</string>
+    <string name="random_image_button_new_image">New Image</string>
+    <string name="random_image_title">Guessing what is on the image…</string>
+</resources>

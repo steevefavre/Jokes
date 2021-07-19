@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_joke_item_box"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_joke_type"
+            android:textSize="@dimen/joke_type_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <ImageView
+            android:id="@+id/iv_favorite_joke_button"
+            android:layout_margin="5dp"
+            android:src="@drawable/star_grey"
+            android:layout_width="@dimen/joke_item_favorite_icon_size"
+            android:layout_height="@dimen/joke_item_favorite_icon_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/very_light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_joke_setup"
+        android:textSize="@dimen/joke_setup_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/purple_700"
+        />
+
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/very_light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_show_punchtext"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:src="@drawable/outline_expand_more_black_18"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_joke_punchline"
+        android:textSize="@dimen/joke_punchline_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

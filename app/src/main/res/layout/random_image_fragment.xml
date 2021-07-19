@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.RandomImageFragment">
+
+    <TextView
+        android:id="@+id/tv_random_image_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:text="@string/random_image_title"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_random_image_image"
+        app:layout_constraintTop_toBottomOf="@id/tv_random_image_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/rand_image_image_size"
+        android:layout_height="@dimen/rand_image_image_size"
+        />
+
+    <ProgressBar
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_random_image_image"
+        app:layout_constraintBottom_toBottomOf="@id/iv_random_image_image"
+        android:id="@+id/loadingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:progress="25"/>
+
+    <TextView
+        android:id="@+id/tv_random_image_info_ai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_random_image_image"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/teal_700"
+        android:layout_margin="15dp"
+        android:text="Hello" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_button_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_new_random_image"
+            android:layout_width="@dimen/action_button_width"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@drawable/shape_action_button"
+            android:text="@string/random_image_button_new_image"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_back_to_jokes"
+            android:layout_width="@dimen/action_button_width"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@drawable/shape_action_button"
+            android:text="@string/random_image_button_back"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
